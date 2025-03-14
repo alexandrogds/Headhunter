@@ -1,3 +1,4 @@
+
 """Verificar se tem novas vagas em vagas.com.br
 
 As vagas são abertas no navegador.

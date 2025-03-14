@@ -53,6 +53,7 @@ with sync_playwright() as p:
 
 		# Ensure no duplicate links in JSON
 		all_details = set(itertools.chain.from_iterable(entry['details'] for entry in existing_data))
+		all_dates = [entry['date'] for entry in existing_data]
 		new_details = [detail for detail in job_details if detail not in all_details]
 
 		# # Check if the last dictionary's 'links' key is not empty and verify the first element
@@ -82,8 +83,9 @@ with sync_playwright() as p:
 
 		# Print the length of the set of links
 		print(f'Busca por: {ask}')
-		print('Total de vagas: ', len(job_details))
-		print('Novas vagas: ', len(new_details), end='\n\n')
+		print('Total de vagas:', len(job_details))
+		print('Novas vagas:', len(new_details))
+		print('Última verificação:', all_dates[-1], end='\n\n')
 
 		# Open links of new job postings in a new window if enabled
 		if args.open_browser:

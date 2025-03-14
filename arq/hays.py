@@ -1,6 +1,9 @@
 """Verificar se tem novas vagas em hays.com.br
 
 As vagas são abertas no navegador.
+
+hays.py=abrir a pagina de vaga diversas vezes e 
+clicar no botão apropriado; abrir duas paginas de cada
 """
 
 from bs4 import BeautifulSoup

@@ -1,4 +1,4 @@
-"""Verificar se tem novas vagas em vagas.com.br
+"""Verificar se tem novas vagas em headhuntersbrazil.com/pt-br/
 
 As vagas são abertas no navegador.
 """
@@ -11,7 +11,7 @@ import argparse
 from playwright.sync_api import sync_playwright
 
 # Parse command-line arguments
-parser = argparse.ArgumentParser(description='Check for new job postings on vagas.com.br')
+parser = argparse.ArgumentParser(description='Check for new job postings on headhuntersbrazil.com')
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('--open-browser', action='store_true', help='Open links in the browser')
 group.add_argument('--no-browser', action='store_true', help='Do not open links in the browser')
