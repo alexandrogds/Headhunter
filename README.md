@@ -1,13 +1,21 @@
 # Headhunter
 Consultar vagas de emprego.
 ## Como usar os arquivos?
- - Na página https://github.com/alexandrogds/Headhunter clique no botão ilustrado abaixo e em seguida clique em `Download`.
-[![Menu de Download](https://i.postimg.cc/s25Pys37/Capturar.png)](https://postimg.cc/7CYJnvGZ)
-
-[![Itens no Menu de Download](https://i.postimg.cc/0Q8SsSW1/Capt2urar.png)](https://postimg.cc/KKHj71h0)
- - Use algo para descomprimir o arquivo .zip.
- - Instale Python
- - Digite no Prompt de Comando as linhas de código a seguir.
+ - Instale Python. Site oficial: https://www.python.org/.
+ - Instale Git. Site oficial: https://git-scm.com/.
+ - Pesquise e abra o aplicativo `Prompt de Comando` para Windows ou `Terminal` para o Linux.
+ - Digite no `Prompt de Comando` ou `Terminal` as linhas de código a seguir.
 ```
-git clone 
+git clone https://github.com/alexandrogds/Headhunter
+cd Headhunter
+python bradesco.py --open-browser
+python catho.py --open-browser
+python ccrh.py --open-browser
+python headhuntersbrazil.py --open-browser
+python michaelpage.py --open-browser
+python quickin.py --open-browser
+python trabalhabrasil.py --open-browser
+python vagas.py --open-browser
 ```
+## Como tirar dúvidas e pedir auxílio, suporte, ...
+Entre em contato comigo pelo WhatSApp: https://wa.me/5595981042843?&text=Ajuda. 55 95 98104 2843.
